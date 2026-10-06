@@ -6,6 +6,7 @@
   <meta name="description" content="صفحة محلية تفاعلية لدراسة الاقتصاد الكلي من محاضرات الفصلين الأول والثاني">
   <title>الاقتصاد الكلي — صفحة الدراسة</title>
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231c5547'/%3E%3Cpath d='M12 46h40M17 41V28m11 13V17m11 24V24m11 17V11' stroke='%23f5d77c' stroke-width='5' stroke-linecap='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="enhancements.css">
   <style>
     :root{--ink:#17221f;--muted:#64716d;--paper:#f7f5ef;--surface:#fff;--line:#dfe5e0;--green:#1c5547;--green2:#2d7764;--mint:#e5f1ec;--gold:#c49324;--goldbg:#fff6dc;--red:#a5413e;--redbg:#fff0ef;--cyan:#00a9df;--magenta:#e4007f;--shadow:0 10px 28px rgba(26,55,45,.075);--radius:18px;font-family:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","SF Arabic","Geeza Pro","Segoe UI",Arial,sans-serif}
     *{box-sizing:border-box;min-width:0}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-weight:400;line-height:1.82;overflow-wrap:break-word}button,input,select{font:inherit}button{cursor:pointer}.ltr,[dir=ltr]{direction:ltr;text-align:left;unicode-bidi:isolate}.term,bdi{direction:ltr;unicode-bidi:isolate}.term{font-weight:650;color:var(--green)}
@@ -27,6 +28,7 @@
   <header class="topbar"><div class="top-inner">
     <div class="brand"><span class="logo">ك</span><span>الاقتصاد الكلي • Macroeconomics</span></div>
     <nav class="nav" aria-label="التنقل الرئيسي"><button data-view="home" class="active">الرئيسية</button><button data-view="intro">المقدمة</button><button data-view="ch1">الفصل 1</button><button data-view="ch2">الفصل 2</button><button data-view="review">مراجعة الاختبار</button></nav>
+    <a class="hub-link" href="https://hazem-mach.github.io/study-hub/">العودة للمواد <span dir="ltr">Back to Study Hub</span></a>
     <div class="progress-chip" id="globalProgress">0% مكتمل</div>
   </div></header>
   <main id="content">
@@ -37,6 +39,7 @@
       </div>
       <div class="section-head"><div><div class="eyebrow">خريطة المذاكرة</div><h2>الفصلان</h2></div><p class="lead">اتبع ترتيب السلايدات. كل درس يحتوي تعريفًا وشرحًا ومثالًا أو مقارنة، ثم فحص فهم قصير.</p></div>
       <div class="grid" id="chapterCards"></div>
+      <aside class="development-note" aria-label="Development notice"><div dir="rtl"><b>هذه النسخة جاهزة للمذاكرة والاستخدام الآن.</b><span>تحسينات إضافية وتطويرات أعمق قادمة لاحقًا، لكنها تحتاج وقتًا حتى تُنفذ بشكل صحيح.</span></div><div dir="ltr" lang="en"><b>This version is ready for studying and use now.</b><span>More improvements and deeper enhancements are coming later, but they take time to build properly.</span></div></aside>
       <section class="lesson"><div class="eyebrow">مرجع الرموز</div><h2>لا تحفظ الرمز قبل أن تفهمه</h2><div class="symbol-grid"><div class="symbol-item"><b>GDP</b> الناتج المحلي الإجمالي</div><div class="symbol-item"><b>GNP</b> الناتج القومي الإجمالي</div><div class="symbol-item"><b>Y</b> الناتج أو الدخل الكلي</div><div class="symbol-item"><b>C</b> الاستهلاك</div><div class="symbol-item"><b>I</b> الاستثمار</div><div class="symbol-item"><b>G</b> إنفاق الحكومة</div><div class="symbol-item"><b>NX</b> صافي الصادرات</div><div class="symbol-item"><b>S</b> الادخار</div><div class="symbol-item"><b>NT</b> صافي الضرائب</div><div class="symbol-item"><b>LF</b> قوة العمل</div><div class="symbol-item"><b>LFPR</b> معدل المشاركة</div><div class="symbol-item"><b>u-rate</b> معدل البطالة</div><div class="symbol-item"><b>CPI</b> مؤشر أسعار المستهلك</div><div class="symbol-item"><b>Δ</b> مقدار التغير</div><div class="symbol-item"><b>%</b> نسبة مئوية</div></div></section>
     </section>
     <section id="intro" class="view"><div id="introContent"></div></section>
@@ -44,7 +47,7 @@
     <section id="ch2" class="view"><div class="chapter-slot" data-chapter="2"></div></section>
     <section id="review" class="view"><div id="reviewContent"></div></section>
   </main>
-  <footer class="footer">مبني محليًا من Ch1.pdf وCh2.pdf • لا يحتاج Backend • التقدم محفوظ في هذا المتصفح</footer>
+  <footer class="footer"><strong>Created by Hazem Al-Zahrani</strong><span>مبني من سلايدات المقرر Ch1 وCh2 • التقدم محفوظ في هذا المتصفح</span><span dir="ltr" lang="en">Built from the Chapter 1 and Chapter 2 course slides • Progress is saved in this browser.</span><div class="footer-links"><a href="https://x.com/H_alzahrani_kau" target="_blank" rel="noopener noreferrer">X</a><a href="https://www.linkedin.com/in/hazem-alzahrani-kau/" target="_blank" rel="noopener noreferrer">LinkedIn</a></div><span>اقتراحات وتطويرات؟ تواصل معي على X</span><span dir="ltr" lang="en">Suggestions &amp; improvements? Contact me on X.</span></footer>
   <script src="vendor/plotly.min.js"></script>
   <script>
   'use strict';
@@ -222,5 +225,6 @@
   function initPriceInflation(){const div=$('#priceInflationPlot');if(!div||div.dataset.ready)return;div.dataset.ready='1';let mode='slow';function update(){let level,rate,msg;if(mode==='fast'){level=[1,1.4,2,2.9,4.1,5.6];rate=[.4,.6,.9,1.2,1.5,1.8];msg='مستوى الأسعار يرتفع بسرعة، لذلك inflation rate مرتفع.'}else if(mode==='flat'){level=[2,2,2,2,2,2];rate=[0,0,0,0,0,0];msg='مستوى الأسعار ثابت، لذلك inflation rate يساوي صفرًا.'}else if(mode==='fall'){level=[5,4.4,3.8,3.2,2.6,2];rate=[-.6,-.6,-.6,-.6,-.6,-.6];msg='مستوى الأسعار ينخفض باستمرار: Deflation.'}else{level=[1,1.3,1.6,1.9,2.2,2.5];rate=[.3,.3,.3,.3,.3,.3];msg='مستوى الأسعار يرتفع، لكن بمعدل منخفض وثابت.'}$('#priceInflationPlotResult').innerHTML=`<b>${msg}</b><br>ارتفاع المستوى لا يكفي وحده؛ نسأل عن مقدار التغير النسبي.`;draw(div,[{x:[1,2,3,4,5,6],y:level,mode:'lines+markers',name:'Price level',line:{color:COLORS.cyan,width:4},hoverinfo:'skip'},{x:[1,2,3,4,5,6],y:rate,mode:'lines+markers',name:'Inflation rate',yaxis:'y2',line:{color:COLORS.magenta,width:4},hoverinfo:'skip'}],plotLayout({xaxis:{showticklabels:false,title:'Time',fixedrange:true,gridcolor:'#e7ebe8'},yaxis:{showticklabels:false,title:'Price level',fixedrange:true,gridcolor:'#e7ebe8'},yaxis2:{showticklabels:false,title:'Inflation rate',overlaying:'y',side:'right',fixedrange:true,zeroline:true,zerolinecolor:'#9aa6a1'}}))}$$('[data-price]').forEach(b=>b.onclick=()=>{mode=b.dataset.price;$$('[data-price]').forEach(x=>x.classList.toggle('active',x===b));update()});update()}
   renderAll();const requested=(location.hash||'#'+(state.view||'home')).slice(1);showView(['home','intro','ch1','ch2','review'].includes(requested)?requested:'home',false);
   </script>
+  <script src="enhancements.js"></script>
 </body>
 </html>
