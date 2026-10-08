@@ -1,0 +1,12 @@
+# Local source collection and internal verification artifacts; never publish.
+.DS_Store
+*.pdf
+*.ppt
+*.pptx
+*.doc
+*.docx
+*.xls
+*.xlsx
+QA-MIDTERM1.md
+tmp/
+site-release/
